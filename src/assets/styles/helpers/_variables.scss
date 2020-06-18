@@ -3,9 +3,9 @@
 
 
 //- Variables -> Base
-$base-font-family:                    "Roboto", Arial, sans-serif !default;
+$base-font-family:                    "Montserrat", Arial, sans-serif !default;
 $base-font-family-serif:              "Times New Roman", serif !default;
-$base-font-size:                      16px !default;
+$base-font-size:                      14px !default;
 $base-font-weight:                    300 !default;
 $base-line-height:                    1.471 !default;
 $base-color:                          $black !default;
@@ -24,18 +24,18 @@ $font-size-medium:                    ceil(($base-font-size * 1)) !default; // ~
 $font-size-small:                     ceil(($base-font-size * 0.875)) !default; // ~14px
 $font-size-tiny:                      ceil(($base-font-size * 0.76)) !default; // ~12px
 
-$font-size-h1:                        floor(($base-font-size * 2)); // ~32px
-$font-size-h2:                        floor(($base-font-size * 1.5)); // ~24px
-$font-size-h3:                        floor(($base-font-size * 1.25)); // ~20px
-$font-size-h4:                        ceil(($base-font-size * 1.125)); // ~18px
+$font-size-h1:                        floor(($base-font-size * 1.5)); // ~32px
+$font-size-h2:                        floor(($base-font-size * 1.25)); // ~24px
+$font-size-h3:                        floor(($base-font-size * 1.125)); // ~20px
+$font-size-h4:                        ceil(($base-font-size * 1)); // ~18px
 $font-size-h5:                        ceil(($base-font-size * 1)); // ~16px
-$font-size-h6:                        ceil(($base-font-size * 0.875)); // ~14px
+$font-size-h6:                        ceil(($base-font-size * 1)); // ~14px
 
 $line-height-computed:                floor(($base-font-size * $base-line-height)); // ~22px
 $line-height-computed-half:           floor(($base-font-size * $base-line-height) / 2); // ~11px
 
-$headings-font-family:                inherit !default;
-$headings-font-weight:                500 !default;
+$headings-font-family:                "Quicksand", Arial, sans-serif !default;
+$headings-font-weight:                700 !default;
 $headings-line-height:                1.3 !default;
 $headings-color:                      inherit !default;
 
