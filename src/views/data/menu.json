@@ -1,11 +1,11 @@
 [
   {
-    "title": "Index",
+    "title": "О нас",
     "href": "/",
     "subitems": false
   },
   {
-    "title": "Catalog",
+    "title": "Услуги",
     "href": "#",
     "subitems": {
       "Catalog item 1": {
@@ -19,7 +19,12 @@
     }
   },
   {
-    "title": "About",
+    "title": "Вакансии",
+    "href": "#",
+    "subitems": false
+  },
+  {
+    "title": "Соглашения",
     "href": "#",
     "subitems": false
   }
