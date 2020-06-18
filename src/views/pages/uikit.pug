@@ -1,37 +1,32 @@
 extends ../layouts/master.pug
 
-block header
-  include ../partials/_header.pug
 
 block content
   main.page-main
     .container
-      section
-        h1 H1: This one is the sub-section or widget title
-        p I held that gun in my hand, I felt a surge of power…like God must feel when he's holding a gun. How could you?! Haven't you learned anything from that guy who gives those sermons at church? Captain Whatshisname? We live in a society of laws! Why do you think I took you to all those Police Academy movies? For fun? Well, I didn't hear anybody laughing, did you? Except at that guy who made sound effects.
-        h2 H2: 1000+ Elements
-        p Haven't you learned anything from that guy who gives those sermons at church? Captain Whatshisname? We live in a society of laws! Why do you think I took you to all those Police Academy movies? For fun? Well, I didn't hear anybody laughing, did you? Except at that guy who made sound effects.
-        blockquote
-          i.sprite.sprite--facebook
-          i.sprite.sprite--twitter
-          i.sprite.sprite--percent_icon
-          p Books are useless! I only ever read one book, "To Kill A Mockingbird," and it gave me absolutely no insight on how to kill mockingbirds!
-        p Makes sound effects and laughs. Where was I? Oh yeah! Stay out of my booze. #[br] Weaseling out of things is important to learn. It's what separates us from the animals…except the weasel. Weaseling out of things is important to learn.
-        p Some #[b text] continue....
-        .row
-          .col.col__xs-6
-            h3 H3: Super Useful
-            p I hope this has taught you kids a lesson: kids never learn. Can't you people take the law into your own hands? I mean, we can't be policing the entire city:
-            ul.list--bullet
-              li You, minion. Lift my arm. AFTER HIM!
-              li Kif, I have mated with a woman. Inform the men.
-              li We're rescng ya.
-              li That's the ONLY thing about being a slave.
-              li You don't know how to do any of those.
-            p Yes, except the Dave Matthews Band doesn't rock. There's one way and only one way to determine if an animal is intelligent. Dissect its brain! It's just like the story of the grasshopper and the octopus.
-          .col.col__xs-6
-            h4 H4: Light &amp; Dark Theme
-            p Guards! Bring me the forms I need to fill out to have her taken away! Leela, Bender, we're going grave robbing. Oh right. I forgot about the battle:
+      section.header-uikit__logo
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z" fill="#1F2041" fill-opacity="0.25"/>
+        <path d="M36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177C31.9421 21.177 28.9421 22.8712 27.1774 25.4476C26.7892 24.4594 26.3303 23.5418 25.7656 22.6947C28.095 20.0123 31.5186 18.3535 35.295 18.3535C36.0715 18.3535 36.7068 18.9888 36.7068 19.7653Z" fill="#1F2041" fill-opacity="0.25"/>
+        <path d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z" fill="#1F2041" fill-opacity="0.25"/>
+        </svg>
+        // img(src="../assets/images/Group.svg", alt="toxingray")
+      section.colorsAndType
+
+        .colors
+        include ../components/color-item/color-item.pug
+          +colorItem({bg: '#1F2041', op: '1'}, {name:'Dark Shade 100%', number:'#1F2041'})
+          +colorItem({bg: '#1F2041', op:'0.75'},{name:'Dark Shade 75%', number:'#1F2041'})
+          +colorItem({bg: '#1F2041', op:'0.50'},{name:'Dark Shade 50%', number:'#1F2041'})
+          +colorItem({bg: '#1F2041', op:'0.25'},{name:'Dark Shade 25%', number:'#1F2041'})
+          +colorItem({bg: '#1F2041', op:'0.05'},{name:'Dark Shade 5%', number:'#1F2041'})
+          +colorItem({bg: '#bc9cff', op:'1'},{name:'Purple', number:'#bc9cff'})
+          +colorItem({bg: '#6fcf97', op:'1'},{name:'Green', number:'#6fcf97'})
+        .type
+          h1 H1: This one is the sub-section or widget title
+          h2 H2: Next one is the item title inside widgets
+          h3 H3: This is a label or CTA text
+          p  Body This is the body text which is used for most of the design, like paragraphs, lists, etc.
             ol.list--number
               li You, minion. Lift my arm. AFTER HIM!
               li Kif, I have mated with a woman. Inform the men.
@@ -142,3 +137,5 @@ block content
 
 block footer
   include ../partials/_footer.pug
+    
+
