@@ -1,10 +1,13 @@
 extends ../layouts/master.pug
-
+//- Custom Configuration
+block config
+  - var adaptive = true // choose website type
+  - var pageTitle = 'UI-kit'
 
 block content
   main.page-main
     .container
-      section.header-uikit__logo
+      .header-uikit__logo
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z" fill="#1F2041" fill-opacity="0.25"/>
         <path d="M36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177C31.9421 21.177 28.9421 22.8712 27.1774 25.4476C26.7892 24.4594 26.3303 23.5418 25.7656 22.6947C28.095 20.0123 31.5186 18.3535 35.295 18.3535C36.0715 18.3535 36.7068 18.9888 36.7068 19.7653Z" fill="#1F2041" fill-opacity="0.25"/>
@@ -34,7 +37,7 @@ block content
               li That's the ONLY thing about being a slave.
               li You don't know how to do any of those.
             p All year long, the grasshopper kept burying acorns for winter, while the octopus mooched off his girlfriend and watched TV. But then the winter came, and the grasshopper died, and the octopus ate all his acorns.
-      section.text-template
+      section.form
         h5 H5: Fully Customizable
         p You, minion. Lift my arm. AFTER HIM! It's just like the story of the grasshopper and the octopus. All year long, the grasshopper kept burying acorns for winter, while the octopus mooched off his girlfriend and watched TV.
         table.table
@@ -90,9 +93,9 @@ block content
             .col.col__sm-3
               h5 Buttons
               ul.list--unstyled
-                li: a.btn.btn--primary(href='#') Normal
-                li.margtop20: a.btn.btn--primary(href='#') Hover
-                li.margtop20: a.btn.btn--primary.active(href='#') Pressed
+                li: a.btn.btn--primary(href='#') CLICK ME
+                li.margtop20: a.btn.btn--primary(href='#') CLICK ME
+                li.margtop20: a.btn.btn--primary.active(href='#') CLICK ME
             .col.col__sm-9
               h5 Button Sizes & Variations
               a.btn.btn--default.btn__xs(href='#') Tiny
@@ -109,9 +112,9 @@ block content
             .col.col__sm-3
               h5 Ghost Buttons
               ul.list--unstyled
-                li: a.btn.btn--outlined(href='#') Normal
-                li.margtop20: a.btn.btn--outlined(href='#') Hover
-                li.margtop20: a.btn.btn--outlined.active(href='#') Pressed
+                li: a.btn.btn--outlined(href='#') CLICK ME
+                li.margtop20: a.btn.btn--outlined(href='#') CLICK ME
+                li.margtop20: a.btn.btn--outlined.active(href='#') CLICK ME
             .col.col__sm-4
               h5 Inputs
               .form__group
@@ -124,7 +127,7 @@ block content
                   option Dropdown Selected
                   option Dropdown Disabled
               h5 Text Area
-              +fieldTextarea('text', 'text', '', 'Good news, everyone', 4, '', false)
+              +fieldTextarea('text', 'text', '', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 4, '', false)
             .col.col__sm-4
               h5 Checkboxes & Radio Buttons
               .form__group
@@ -143,8 +146,15 @@ block content
       </svg>
       
       block header
-      include ../partials/_header.pug
-      
+      .uikit__header-wrap
+        .uikit__header-login
+        include ../partials/_header.pug
+        .UIKIT__header-buttons
+          a.btn.btn--default.btn--round.btn__xs(href='#') Войти
+          a.btn.btn--default.btn--round.btn__xs(href='#') Зарегистрироваться
+      .uikit__header-login
+        include ../partials/_header.pug
+        <span>| Юлий Цезарь </span>
       block footer
       include ../partials/_footer.pug
     
