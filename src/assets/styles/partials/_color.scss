@@ -1,0 +1,56 @@
+//
+// Partials -> Color
+// ------------------------------------
+
+
+//
+// color ui kit//
+.header-uikit__logo{
+    margin: 30px auto auto 30px;    
+}
+.colors{
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 67px;
+}
+.colorbox_item {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin: 0 20px 20px 0;  
+}
+.dark100{
+    background: #1F2041;
+}
+.dark75{
+    background: rgba(31, 32, 65, 0.75);
+}
+.dark50{
+    background: rgba(31, 32, 65, 0.5);
+}
+.dark25{
+    background: rgba(31, 32, 65, 0.25);
+}
+.dark5{
+    background: rgba(31, 32, 65, 0.5);
+}
+.purple{
+    background: $pagination-border;    
+}
+.green{
+    background: #6FCF97;
+}
+h2{
+    margin-top: 0;
+}
+.color_info {
+    width: auto;
+    height: auto;
+} 
+.color__info_item{
+    height: 70px;
+    margin: 5px 0px 20px 20px;    
+}

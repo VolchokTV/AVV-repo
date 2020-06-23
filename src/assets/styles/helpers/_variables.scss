@@ -21,12 +21,12 @@ $link-decoration:                     none;
 //- Variables -> Typography
 $font-size-large:                     ceil(($base-font-size * 1.125)) !default; // ~18px
 $font-size-medium:                    ceil(($base-font-size * 1)) !default; // ~16px
-$font-size-small:                     ceil(($base-font-size * 0.875)) !default; // ~14px
+$font-size-small:                     ceil(($base-font-size * 0.87)) !default; // ~14px
 $font-size-tiny:                      ceil(($base-font-size * 0.76)) !default; // ~12px
 
-$font-size-h1:                        floor(($base-font-size * 1.5)); // ~32px
-$font-size-h2:                        floor(($base-font-size * 1.25)); // ~24px
-$font-size-h3:                        floor(($base-font-size * 1.125)); // ~20px
+$font-size-h1:                        floor(($base-font-size * 1.71)); // ~24px
+$font-size-h2:                        floor(($base-font-size * 1.4)); // ~19px
+$font-size-h3:                        floor(($base-font-size * 0.87)); // ~20px
 $font-size-h4:                        ceil(($base-font-size * 1)); // ~18px
 $font-size-h5:                        ceil(($base-font-size * 1)); // ~16px
 $font-size-h6:                        ceil(($base-font-size * 1)); // ~14px
@@ -160,9 +160,9 @@ $breadcrumb-separator:                "/";
 
 
 //- Pagination
-$pagination-color:                    #54657e;
+$pagination-color:                    180deg, #BC9CFF 0%, #8BA4F9 100%;
 $pagination-bg:                       #fff;
-$pagination-border:                   #fff;
+$pagination-border:                   #BC9CFF;
 
 $pagination-hover-color:              #fff;
 $pagination-hover-bg:                 $base-color-main;
