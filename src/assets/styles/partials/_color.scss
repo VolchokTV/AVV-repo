@@ -45,7 +45,7 @@
 .green{
     background: #6FCF97;
 }
-h2{
+h1, h2, h3 { 
     margin-top: 0;
 }
 .color_info {
@@ -59,8 +59,76 @@ h2{
 
 .type__wrap{
     padding-left: 437px;
-    padding-right: 197px;        
+   //padding-right: 197px;        
 }
 .type-item{ 
+    display: flex;
     
+}
+.type-item_h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: right;
+    /* Dark 25% */
+    color: rgba(31, 32, 65, 0.25);
+    margin-right: 30px;
+    margin-bottom: 80px;
+}
+.type-item_h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    /* identical to box height */
+    text-align: right;
+    /* Dark 25% */
+    color: rgba(31, 32, 65, 0.25);
+    margin-right: 30px;
+    margin-bottom: 75px;
+}
+.type-item_h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-align: end;
+    text-transform: uppercase;
+    /* Dark 25% */
+    color: rgba(31, 32, 65, 0.25);
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+type-item_body{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    text-align: end;
+
+    /* Dark 25% */
+
+    color: rgba(31, 32, 65, 0.25);
+    margin-right: 30px;
+    margin-top: 50px;
+}
+.body-type{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    /* Dark 75% */
+    color: rgba(31, 32, 65, 0.75);
+    margin-left: 30px;
 }
